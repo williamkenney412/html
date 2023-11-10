@@ -1,0 +1,132 @@
+/* CSS sheet */
+form {
+    /*Center the Form*/
+    margin: 0 auto;
+    width: 600px;
+    box-sizing: border-box;
+
+    /* Curved Border around the form */
+    padding: 1em;
+    border: 1px solid #1a1515;
+    border-radius: 1em;
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: 30%, 70%;
+    width: 344px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#user-photo {
+    border-radius: 50%;
+    width: 40px;
+    transition: box-shadow .3s;
+    border: 1px solid #ccc;
+    align-self: flex-start;
+    margin: 6px;
+}
+
+#user-photo:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    column-count: 1;
+    align-content: flex-start;
+}
+
+#desert-photo {
+    height: 194px;
+    width: 344px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+}
+
+#desert-photo:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+
+#firstlast {
+    font-size: 22px;
+    display: flex;
+    align-content: flex-start;
+    margin-bottom: -25px;
+    margin-top: -10px;
+}
+
+#body-text {
+    font-size: 11px;
+    padding: 16px;
+    color: #232F34;
+    opacity: 0.7;
+    margin-top: -30px;
+}
+
+#secondary {
+    font-family: monospace;
+    font-size: 11px;
+    color: #232F34;
+    opacity: 0.7;
+}
+
+.heading {
+    color: #000;
+    size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    width: 40px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+select {
+    width: 100px;
+}
+
+/* Align Textfield with Label */
+textarea {
+    vertical-align: top;
+    /* Space to type */
+    height: 5em;
+}
+
+/* Screen is less than 600px */
+@media screen and (max-width: 599px) {
+    form {
+        width: 100%;
+    }
+
+    label {
+        width: 100%;
+    }
+
+}
+
+/* Screen is 600+px */
+@media screen and (min-width: 600px) {
+    form {
+        width: 600px;
+        grid: display;
+    }
+
+    label {
+        grid: display;
+    }
+
+    div {
+        grid: display;
+    }
+
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="site.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>App Academy HTML/CSS Assessment</title>
+  <link href="site.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <!--Takes user to pets page after submission-->
+  <form action="/pets" target="_blank" method="post">
+
+    <!--Get user pet name-->
+    <div class="grid-container">
+      <div class="grid-item">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="pet_name"><br><br>
+      </div>
+
+      <!--Let user select pet type from dropdown-->
+      <div class="grid-item">
+        <label for="type">Type</label><br>
+        <select id="type" name="pet_type">
+          <option value="Cat">Cat</option>
+          <option value="Dog">Dog</option>
+          <option value="Hamster">Hamster</option>
+          <option value="Other">Other</option>
+          <option value="Zebra">Zebra</option>
+        </select><br>
+      </div>
+
+      <!--User enters bio-->
+      <div class="grid-item">
+        <label for="bio">Biography</label><br>
+        <textarea id="bio" name="pet_bio" rows="4" cols="40">
+  </textarea><br>
+      </div>
+
+      <!--Space for email-->
+      <div class="grid-item">
+        <label for="email">Owner's Email</label><br>
+        <input type="email" id="owner-email" name="pet_owner_email">
+      </div>
+
+      <!--Submit Button-->
+      <div class="grid-item">
+        <button type="submit" id="new-pet-submit-button">Create new pet</button>
+        <button type="reset">Reset</button><br><br>
+      </div>
+  </form>
+
+  <!--Picture Card-->
+  <div class="card" id="outline">
+
+
+    <!-- Desert Photo -->
+    <div class="photo">
+      <img src="C:\Users\william.kenney\Downloads\html-css-assessment-1.3\html-css-assessment\images\desert.jpg"
+        id="desert-photo">
+    </div>
+
+    <!-- User Photo -->
+    <div class="photo">
+      <img src="c:\Users\william.kenney\Downloads\html-css-assessment-1.3\html-css-assessment\images\person-avatar.jpg"
+        id="user-photo">
+    </div>
+
+    <!-- Username -->
+    <div class="text">
+      <h4 id="firstlast">Alana Fraiser</h4>
+      <!-- Secondary Text-->
+      <h6 id="secondary">Full Stack Engineer</h6>
+      <p id="body-text"> This is the body text.</p>
+    </div>
+
+  </div>
+</body>
+</body>
+
+</html>
